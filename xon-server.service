@@ -1,0 +1,13 @@
+[Unit]
+Decription=Xonotic server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/xon_git/xonotic/all run dedicated -userdir /opt/xon_git/xon_cfg/
+User=xon
+Group=xon
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
