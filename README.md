@@ -3,7 +3,7 @@
 * `config.cfg` - client config. Located in `.xonotic/data`
 * `hud_luma_xord_v4.cfg` - my HUD config. Located in `.xonotic/data/data`. You can choise it in game settings (Settings -> Game -> HUD -> Enter HUD editor)
 ## Server
-* `server.cfg` - server config which contains all custom settings
+* `server.cfg` - server config which contains all custom settings, [see docs](https://gitlab.com/xonotic/xonotic/-/wikis/basic-server-configuration)
 * `xon.conf` - NGINX server config with location, which need for downloading content from server. See [Official docs](https://gitlab.com/xonotic/xonotic/-/wikis/Automatic-map-downloads)
 *  `xon-server.service` - systemd service for running server. For convenience to save server logs and autostart on boot. [More about systemd](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
 # Server description
