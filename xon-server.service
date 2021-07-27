@@ -1,5 +1,5 @@
 [Unit]
-Decription=Xonotic server
+Description=Xonotic server
 After=network.target
 
 [Service]
