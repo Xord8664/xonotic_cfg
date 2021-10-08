@@ -42,6 +42,7 @@ def load_conf():
     try:
         open(config_file, "r").readable()
         print('config = ' + config_file)
+        sys.stdout.flush()
     except:
         sys.exit("No such file or not readable")
 
@@ -87,12 +88,14 @@ def doing_things():
         tip = tips_list[rnd_tip].strip()
         print('tip number: ' + str(rnd_tip))
         print('sending message: ' + tip)
+        sys.stdout.flush()
 
         try:
             data = rcon.execute('say Tip #' + str(rnd_tip) + ': ' + tip) # on python3 data would be bytes type
             print(data)
         finally:
             rcon.close()
+        sys.stdout.flush()
         time.sleep(message_interval)
         
 if __name__ == '__main__':
