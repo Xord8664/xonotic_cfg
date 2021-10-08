@@ -73,7 +73,7 @@ def load_conf():
 def doing_things():
     '''Main part is xrcon module which provides posibility to connect to xonotic (not only btw) server.
     Links: https://pypi.org/project/xrcon/, https://github.com/bacher09/xrcon
-    Install it with pip'''
+    Make sure you installed it'''
     
     while True:
         rcon = XRcon(host, port, password)
