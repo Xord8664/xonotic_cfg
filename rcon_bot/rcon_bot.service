@@ -1,0 +1,13 @@
+[Unit]
+Description=Flooding bot for xonotic server
+After=xon-server.service
+
+[Service]
+Type=simple
+ExecStart=/path/to/rcon_bot.py -c /path/to/config.ini
+User=xon
+Group=xon
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
