@@ -4,6 +4,7 @@ After=xon-server.service
 
 [Service]
 Type=simple
+ExecStartPre=sleep 30
 ExecStart=/path/to/rcon_bot.py -c /path/to/config.ini
 User=xon
 Group=xon
