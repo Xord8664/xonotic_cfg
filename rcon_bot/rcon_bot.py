@@ -89,7 +89,7 @@ def doing_things():
         print('sending message: ' + tip)
 
         try:
-            data = rcon.execute('say ' + tip) # on python3 data would be bytes type
+            data = rcon.execute('say Tip #' + str(rnd_tip) + ': ' + tip) # on python3 data would be bytes type
             print(data)
         finally:
             rcon.close()
