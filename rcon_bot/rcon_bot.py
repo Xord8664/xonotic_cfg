@@ -26,7 +26,7 @@ Defaults won't work (most likely) =)'''
 
 def load_conf():
     '''Specify config file location with -c option'''
-    
+
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'c:')
     except:
@@ -54,19 +54,19 @@ def load_conf():
             if 'host' in read_conf[ini_section]:
                 global host
                 host = read_conf[ini_section]['host']
-                
+
             if 'port' in read_conf[ini_section]:
                 global port
                 port = read_conf[ini_section]['port']
-                
+
             if 'password' in read_conf[ini_section]:
                 global password
                 password = read_conf[ini_section]['password']
-                
+
             if 'text_file' in read_conf[ini_section]:
                 global text_file
                 text_file = read_conf[ini_section]['text_file']
-            
+
             if 'message_interval' in read_conf[ini_section]:
                 global message_interval
                 message_interval = int(read_conf[ini_section]['message_interval'])
@@ -75,12 +75,12 @@ def doing_things():
     '''Main part is xrcon module which provides posibility to connect to xonotic (not only btw) server.
     Links: https://pypi.org/project/xrcon/, https://github.com/bacher09/xrcon
     Make sure you installed it'''
-    
+
     while True:
         rcon = XRcon(host, port, password)
         rcon.connect()
         '''Reading file everytime makes possible to change content "on fly"'''
-        
+
         with open(text_file, 'r') as tips:
             tips_list = tips.readlines()
 
@@ -91,13 +91,13 @@ def doing_things():
         sys.stdout.flush()
 
         try:
-            data = rcon.execute('say Tip #' + str(rnd_tip) + ': ' + tip) # on python3 data would be bytes type
+            data = rcon.execute('say Newbie tip #' + str(rnd_tip) + ': ' + tip) # on python3 data would be bytes type
             print(data)
         finally:
             rcon.close()
         sys.stdout.flush()
         time.sleep(message_interval)
-        
+
 if __name__ == '__main__':
     load_conf()
     doing_things()
