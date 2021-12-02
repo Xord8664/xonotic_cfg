@@ -1,16 +1,14 @@
 Fire splash weapons at obstacles near other players
-Pounce on your enemies from above
+Shoot your enemies from above
 Don't attack a well-armed player from the front
-Turn off all music and listen players footsteps
 Bind weapons around WASD to switch faster
-Don't press F11.
-Megahealth and heavy armor spawns 30 seconds after picking up
+Don't press F11
+Don't forget about megahealth and heavy armor
 Controlling megahealth and heavy armor makes you hard to kill
-Try to predict other players. It's hard, I know. But I believe you can =)
+Try to predict other players
 Become familiar with the layout of the maps
 Sometimes runing away is a best way
-This is a very useful tip
-Visit https://xonotic.org/guide/ to learn alot of things
+Be cool and follow https://xonotic.org/guide/
 Spectate to skilled players to see how they doing it
 Switch weapon immediately after shot and shoot again - combo!
 Splash damage travels through walls
