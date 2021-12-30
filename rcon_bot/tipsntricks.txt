@@ -14,5 +14,4 @@ Switch weapon immediately after shot and shoot again - combo!
 Splash damage travels through walls
 Feel free to ask in chat
 There is no reason to hate other players =)
-Someone stole this tip 0_0
 Want to chat? https://xonotic.org/chat/
